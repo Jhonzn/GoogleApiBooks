@@ -44,7 +44,7 @@ export default function App() {
         const res = await getComents();
         setComents(res.data);
         } catch (err) {
-        message.error("Error cargando los comentarios");
+        message.error("Error cargando los Comentarios");
         } finally {
         setLoading(false);
         }
