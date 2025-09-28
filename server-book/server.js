@@ -11,7 +11,9 @@ const app = express();
 // Definir opciones antes de usarlas
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://google-api-books-5t6n.vercel.app"]
+  origin: ["http://localhost:3000", "https://google-api-books-5t6n.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"], // opcional: los métodos permitidos
+  credentials: true, // si necesitas enviar cookies o auth
 };
 
 app.use(cors(corsOptions));
