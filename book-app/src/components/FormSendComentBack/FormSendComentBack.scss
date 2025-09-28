@@ -1,0 +1,36 @@
+.form-send-coment{
+    background-color: rgb(5, 160, 244);
+    border: 2px solid #031163;
+    padding: 20px;
+    width: 600px;
+    border-radius: 8px;
+
+    &__title {
+        margin: 0 !important;
+
+    }
+    &__form {
+
+        .MuiFormControl-root {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        &-name {
+            width: 50% !important;
+            background-color: white !important;
+        }
+
+        &-textarea {
+            width: 100% !important;
+            background-color: white !important;
+        }
+
+        &-rate {
+            margin: 10px;
+        }
+
+
+
+    }
+}

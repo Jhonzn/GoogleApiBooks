@@ -1,0 +1,19 @@
+.list-coments-empty {
+
+    text-align: center;
+    color: #fff;
+
+}
+
+.list-coments {
+
+    max-height: 400px;   // altura máxima
+    overflow-y: auto;    // agrega scroll vertical
+    padding-right: 8px;  // espacio para que no tape el scroll
+    scrollbar-width: none;   // 🔹 Firefox
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    display: flex;
+    
+     
+}

@@ -1,0 +1,50 @@
+.menu-top {
+  display: flex;
+  align-items: center;
+  background-color: rgb(5, 160, 244); /* 🔹 fondo del header */
+  padding: 0 20px;
+
+  &__logo {
+    display: flex;
+    margin-right: 40px;
+
+    svg {
+      width: 40px;
+    }
+  }
+}
+
+.custom-menu {
+  flex: 1;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+  background-color: transparent !important; /* 🔹 sin fondo blanco de AntD */
+  border-bottom: none !important;          /* 🔹 quita borde gris */
+}
+
+/* Items */
+.custom-menu .ant-menu-item {
+  background-color: transparent !important; /* 🔹 no cada item en azul */
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+/* Texto normal */
+.custom-menu .ant-menu-item a {
+  color: white !important;
+}
+
+/* Hover */
+.custom-menu .ant-menu-item:hover,
+.custom-menu .ant-menu-item:hover a {
+  color: #e6e6e6 !important;
+  background-color: rgba(255, 255, 255, 0.2) !important; /* sutil */
+}
+
+/* Seleccionado */
+.custom-menu .ant-menu-item-selected,
+.custom-menu .ant-menu-item-selected a {
+  color: #fff !important;
+  background-color: #031163 !important; /* azul oscuro */
+}

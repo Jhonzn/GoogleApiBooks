@@ -1,0 +1,58 @@
+.coment {
+    position: relative;
+    white-space: normal;  /* permite saltos de línea */
+    word-wrap: break-word; /* divide palabras largas si es necesario */
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h5 {
+            margin: 0;
+
+        }
+
+        .icon-delete {
+
+
+
+            &:hover {
+                cursor: pointer;
+                fill: #f00;
+            }
+            
+
+        }
+        .icon-delete.disabled {
+            pointer-events: none; /* evita clicks */
+            opacity: 0.4;         /* se ve desactivado */
+            cursor: not-allowed;
+        }
+
+        .icon-edit {
+
+            &:hover {
+                cursor: pointer;
+                fill: rgb(5, 90, 236);
+            }
+
+        }
+        .icon-edit.disable {
+            pointer-events: none;   /* Desactiva clicks */
+            cursor: not-allowed;    /* Muestra cursor de prohibido */
+            fill: #ccc;             /* Color gris para indicar deshabilitado */
+            opacity: 0.6;           /* Un poco transparente */
+        }
+
+
+    }
+
+
+    &__date-add-coment {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 10px;
+    }
+}
