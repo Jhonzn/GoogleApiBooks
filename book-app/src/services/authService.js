@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const API_URL = "https://googleapibooks.onrender.com/auth" || "http://localhost:8081/auth";
+const API_URL = "https://googleapibooks.onrender.com/auth/" || "http://localhost:8081/auth/";
 
 export const register = (nombre, email, password) => 
     axios.post(API_URL + "register", {nombre, email, password });
