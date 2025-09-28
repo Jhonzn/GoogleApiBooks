@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8081/comentarios";
+const API_URL = "https://googleapibooks.onrender.com/comentarios" || "http://localhost:8081/comentarios";
 
 // Obtener comentarios
 export const getComents = () => axios.get(API_URL);

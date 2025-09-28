@@ -11,8 +11,9 @@ const app = express();
 // Definir opciones antes de usarlas
 
 const corsOptions = {
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "https://google-api-books-5t6n.vercel.app"]
 };
+
 app.use(cors(corsOptions));
 
 
@@ -21,6 +22,8 @@ app.use("/comentarios", require("./routes/comentarioRoutes"));
 app.use("/auth", require("./routes/authRoutes"));
 
 
-app.listen(8081, () => {
-  console.log("✅ Server started on port 8081");
+const PORT = process.env.PORT || 8081;
+app.listen(PORT, () => {
+  console.log(`✅ Server started on port ${PORT}`);
 });
+
