@@ -14,7 +14,6 @@ export default function Home(props) {
     const newBooks = useFetch(`${API_BASE}/volumes?q=publishedDate:${currentYear}&maxResults=20&langRestrict=es`);
     const masPopulares = useFetch(`${API_BASE}/volumes?q=subject:*&orderBy=relevance&maxResults=20&langRestrict=es`);
     const librosPremium = useFetch(`${API_BASE}/volumes?q=premium&orderBy=relevance&maxResults=20&langRestrict=es`);
-    console.log(newBooks);
     return (
         <>
         <Row>

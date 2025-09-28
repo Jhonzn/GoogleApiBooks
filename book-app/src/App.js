@@ -29,8 +29,6 @@ export default function App() {
         text: null
     });
 
-    //if(token) console.log("Usuario decodificado:", user);
-    console.log(coments)
     //Actualizar usuario 
     useEffect(() => {
       const u = GetUser();
@@ -76,7 +74,6 @@ export default function App() {
         fetchComents(); // recargar lista
         message.success("Comentario actualizado con éxito ✅");
       } catch (err) {
-        console.error("Error actualizando comentario:", err);
         message.error("❌ Error al actualizar el comentario");
       }
     }
