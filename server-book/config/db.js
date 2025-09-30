@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 
-const uri = "mongodb+srv://BookAplication:aplicaciondelibros@cluster0.plnmdkz.mongodb.net/salasdb?retryWrites=true&w=majority&appName=Cluster0";
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(uri);
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log("✅ MongoDB Connected");
   } catch (error) {
     console.error("❌ DB connection error:", error);
