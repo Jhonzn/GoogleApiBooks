@@ -7,7 +7,6 @@ import { getComents, createComent, deleteComent, updateComent } from "./services
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
 
-
 import Home from './pages/home';
 import NewBooks from './pages/new-books';
 import Popular from './pages/popular';
